@@ -2,60 +2,126 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#09090d">
-<meta name="description" content="JAXEN DOOM — personal space for gaming, creativity and video editing.">
-<title>JAXEN DOOM | Official Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#101015">
+<title>JAXEN DOOM TRANSCODE PRO</title>
 <style>
-:root{--bg:#09090d;--panel:#121219;--text:#f4f2f5;--muted:#a6a2ad;--red:#ef3340;--line:#292630}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1100px,90%);margin:auto}
-header{position:sticky;top:0;z-index:10;background:#09090deF;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
-.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-weight:900;letter-spacing:2px}.brand span{color:var(--red)}nav{display:flex;gap:20px;flex-wrap:wrap}nav a{font-size:13px;color:var(--muted)}nav a:hover{color:white}
-.hero{min-height:78vh;display:flex;align-items:center;padding:76px 0;background:radial-gradient(ellipse at 80% 45%,#55151d55,transparent 42%),linear-gradient(130deg,#111118,#09090d 65%)}
-.kicker{color:var(--red);font-weight:800;letter-spacing:4px;font-size:12px}.hero h1{font-size:clamp(46px,10vw,94px);line-height:.98;letter-spacing:-4px;margin:18px 0}.hero h1 span{color:var(--red)}.hero p{max-width:560px;color:var(--muted);font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:12px 20px;border:1px solid var(--red);border-radius:4px;font-weight:800;font-size:13px;letter-spacing:1px}.primary{background:var(--red);color:white}.secondary{border-color:#55515e}
-section{padding:76px 0;border-top:1px solid var(--line)}.eyebrow{color:var(--red);font-size:11px;letter-spacing:3px;font-weight:800}.heading{font-size:clamp(28px,5vw,42px);margin:8px 0 28px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);padding:22px;border-radius:8px}.card h3{margin:6px 0 8px}.number{font-size:30px;color:var(--red);font-weight:900}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.tag{font-size:11px;padding:5px 9px;border:1px solid #403b47;border-radius:30px;color:#c9c5ce}
-.workbox{min-height:150px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(135deg,#241016,#121219);border:1px dashed #70404a;border-radius:8px;padding:22px}.workbox strong{font-size:18px}.socials{display:flex;gap:12px;flex-wrap:wrap}.socials a{border:1px solid var(--line);padding:10px 16px;border-radius:5px;color:#ddd}.socials a:hover{border-color:var(--red)}
-footer{padding:28px 0;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-@media(max-width:700px){.nav{padding:14px 0;align-items:flex-start;flex-direction:column}nav{gap:13px}.hero{min-height:70vh}.grid{grid-template-columns:1fr}.hero h1{letter-spacing:-2px}section{padding:58px 0}}
+:root{--bg:#101015;--panel:#1b1b24;--panel2:#23232e;--line:#373744;--white:#f7f5f7;--muted:#aaa8b4;--red:#ef4050;--lime:#b7f36b;--mint:#bdf3df}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -10%,#3b1720 0,transparent 42%),var(--bg);color:var(--white);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+.wrap{width:min(850px,92%);margin:auto}.top{padding:23px 0 18px;border-bottom:1px solid var(--line)}.brand{font-size:21px;font-weight:1000;letter-spacing:1.5px}.brand b{color:var(--red)}.sub{font-size:10px;letter-spacing:3px;color:var(--muted);font-weight:800;margin-top:2px}
+.pill{font-size:10px;padding:7px 10px;border:1px solid #4c4b57;border-radius:30px;color:var(--lime);font-weight:800}
+.hero{padding:30px 0 18px}.eyebrow{font-size:11px;letter-spacing:3px;color:var(--red);font-weight:900}.hero h1{font-size:clamp(30px,8vw,50px);line-height:1.02;margin:8px 0}.hero p{color:var(--muted);font-size:14px}
+.tabs{display:grid;grid-template-columns:1fr 1fr;background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:5px;gap:5px;margin:20px 0}.tab{border:0;background:transparent;color:var(--muted);padding:14px 7px;border-radius:11px;font-weight:900;font-size:13px}.tab.active{background:var(--mint);color:#17191a}
+.panel{background:#f8f5e8;color:#171717;border:3px solid #171717;border-radius:24px;padding:20px;margin:15px 0 25px;box-shadow:5px 6px 0 #050506}
+.panel h2{font-size:27px;line-height:1.05;margin:12px 0 5px;font-weight:1000;font-style:italic}.desc{color:#666;font-size:13px;margin:0 0 18px}
+.label{display:block;font-size:11px;letter-spacing:1.5px;font-weight:950;color:#5e5b54;margin:15px 0 7px}
+.upload{display:block;border:2px dashed #77736b;border-radius:14px;padding:24px 12px;text-align:center;background:#fffdf4;cursor:pointer}.upload strong{display:block;font-size:15px}.upload small{color:#777}.upload input{display:none}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{width:100%;border:2px solid #222;border-radius:10px;padding:12px;background:white;color:#171717;font-size:14px;font-weight:700}
+.btn{width:100%;border:2px solid #171717;background:var(--red);color:white;border-radius:13px;padding:14px;font-size:14px;font-weight:950;box-shadow:3px 4px 0 #171717;margin-top:16px}.btn:disabled{opacity:.55}.btn.alt{background:#d9f4e7;color:#161616}
+.note{font-size:12px;color:#666;line-height:1.55;margin-top:12px}.status{background:#d9f4e7;border:2px solid #171717;border-radius:13px;padding:13px;margin-top:14px;font-size:13px;white-space:pre-wrap;color:#202020}.status:empty{display:none}
+.result{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:13px}.metric{background:#e6f5ec;border:1.5px solid #222;border-radius:12px;padding:12px}.metric small{display:block;color:#666;font-size:10px;font-weight:900;letter-spacing:1px}.metric strong{font-size:17px;overflow-wrap:anywhere}
+.hidden{display:none!important}a.download{display:block;text-align:center;background:#bdf3df;color:#151515;text-decoration:none;border:2px solid #171717;padding:13px;border-radius:12px;font-weight:950;margin-top:12px}
+footer{padding:22px 0 35px;color:#888;font-size:11px;text-align:center}
+@media(min-width:650px){.panel{padding:28px}.result{grid-template-columns:repeat(4,1fr)}}
 </style>
 </head>
 <body>
-<header><div class="wrap nav">
-<a class="brand" href="#home">JAXEN <span>DOOM</span></a>
-<nav aria-label="Main navigation"><a href="#about">ABOUT</a><a href="#work">MY WORK</a><a href="#gallery">GALLERY</a><a href="#contact">CONTACT</a></nav>
+<header class="top"><div class="wrap" style="display:flex;justify-content:space-between;align-items:center">
+<div><div class="brand">JAXEN <b>DOOM PRO</b></div><div class="sub">VIDEO CREATOR TOOLS</div></div><span class="pill">● PERSONAL WEB APP</span>
 </div></header>
-<main>
-<section class="hero" id="home"><div class="wrap">
-<div class="kicker">OFFICIAL PERSONAL WEBSITE</div>
-<h1>JAXEN<br><span>DOOM.</span></h1>
-<p>Gamer. Creator. Video editor. Welcome to my world — a place for gaming, creativity and the work I'm proud to share.</p>
-<div class="actions"><a class="btn primary" href="#work">EXPLORE MY WORK</a><a class="btn secondary" href="#contact">CONTACT ME</a></div>
-<div class="tags"><span class="tag">GAMING</span><span class="tag">CONTENT CREATION</span><span class="tag">VIDEO EDITING</span></div>
-</div></section>
-<section id="about"><div class="wrap">
-<div class="eyebrow">01 / ABOUT ME</div><h2 class="heading">A LITTLE ABOUT MY WORLD.</h2>
-<p class="muted" style="max-width:720px">I'm JAXEN DOOM. I enjoy gaming, creating videos and learning new editing skills. This website is my personal home on the internet, where I can share projects, highlights and future updates.</p>
-<div class="grid" style="margin-top:28px"><article class="card"><div class="number">01</div><h3>Gamer</h3><p class="muted">Gaming highlights, memorable plays and moments from my favourite games.</p></article><article class="card"><div class="number">02</div><h3>Creator</h3><p class="muted">Building a creator identity and sharing content with the community.</p></article><article class="card"><div class="number">03</div><h3>Editor</h3><p class="muted">Practising creative edits, transitions, effects and storytelling.</p></article></div>
-</div></section>
-<section id="work"><div class="wrap">
-<div class="eyebrow">02 / PORTFOLIO</div><h2 class="heading">MY WORK.</h2>
-<div class="grid"><div class="workbox"><span class="eyebrow">PROJECT 01</span><strong>Gaming Edits</strong><p class="muted">Add your best gameplay video link here.</p></div><div class="workbox"><span class="eyebrow">PROJECT 02</span><strong>Montages</strong><p class="muted">Showcase your favourite montage.</p></div><div class="workbox"><span class="eyebrow">PROJECT 03</span><strong>Creative Edits</strong><p class="muted">Share your editing projects here.</p></div></div>
-</div></section>
-<section id="gallery"><div class="wrap">
-<div class="eyebrow">03 / GALLERY</div><h2 class="heading">HIGHLIGHTS & MOMENTS.</h2>
-<p class="muted">Your gallery is ready for your own photos, gaming screenshots and creator artwork. Replace this section with your images when you're ready.</p>
-<div class="grid"><div class="workbox"><strong>YOUR IMAGE 01</strong><span class="muted">Add a favourite photo</span></div><div class="workbox"><strong>YOUR IMAGE 02</strong><span class="muted">Add a gaming screenshot</span></div><div class="workbox"><strong>YOUR IMAGE 03</strong><span class="muted">Add your creator artwork</span></div></div>
-</div></section>
-<section id="contact"><div class="wrap">
-<div class="eyebrow">04 / CONNECT</div><h2 class="heading">LET'S CONNECT.</h2>
-<p class="muted">Follow my work or contact me through my social platforms.</p>
-<div class="socials">
-<!-- Replace the # symbols below with your real profile links -->
-<a href="#" aria-label="TikTok profile">TikTok ↗</a><a href="#" aria-label="Facebook profile">Facebook ↗</a><a href="#" aria-label="YouTube channel">YouTube ↗</a>
+<main class="wrap">
+<div class="hero"><div class="eyebrow">CREATOR TOOLKIT / 001</div><h1>MAKE IT <span style="color:var(--red)">CLEAN.</span><br>MAKE IT YOURS.</h1><p>Convert your video and check basic TikTok-ready technical details — right in your browser.</p></div>
+<div class="tabs"><button class="tab active" id="tabTrans" onclick="showTab('trans')">⚡ TRANSCODER</button><button class="tab" id="tabCheck" onclick="showTab('check')">✓ TIKTOK CHECKER</button></div>
+
+<section class="panel" id="transPanel">
+<div class="eyebrow">01 / ENCODE VIDEO</div><h2>VIDEO TRANSCODER.</h2><p class="desc">Choose a video and export an MP4 for social media.</p>
+<label class="upload"><span style="font-size:28px">📁</span><strong id="transFileName">Choose video file</strong><small>MP4, MOV, WEBM and other browser-supported files</small><input id="transFile" type="file" accept="video/*"></label>
+<div class="row">
+<div><label class="label" for="resolution">OUTPUT RESOLUTION</label><select class="field" id="resolution"><option value="720">720p</option><option value="1080" selected>1080p</option><option value="1440">2K / 1440p</option><option value="480">480p</option><option value="original">Keep original size</option></select></div>
+<div><label class="label" for="fps">FRAME RATE</label><select class="field" id="fps"><option value="30" selected>30 FPS</option><option value="60">60 FPS</option><option value="original">Keep original FPS</option></select></div>
 </div>
-<p class="muted" style="font-size:12px;margin-top:18px">Tip: edit the links in index.html and replace # with your real profile URLs.</p>
-</div></section>
+<div class="status" style="display:block">HDR STATUS: NOT ENABLED IN THIS VERSION<br>This browser build exports H.264 SDR. It does not guarantee HDR preservation or HDR encoding. True HDR needs a compatible 10-bit HDR workflow and source video.</div>
+<label class="label" for="quality">VIDEO QUALITY</label><select class="field" id="quality"><option value="23">Balanced (recommended)</option><option value="20">High quality · larger file</option><option value="26">Smaller file</option></select>
+<button class="btn" id="convertBtn" disabled>⚡ CONVERT TO MP4</button>
+<div class="status" id="transStatus" aria-live="polite"></div><a id="downloadLink" class="download hidden" download="jaxen-doom.mp4">⬇ DOWNLOAD CONVERTED VIDEO</a>
+<p class="note">Processing happens on your device using FFmpeg WebAssembly. The first conversion downloads the video engine and may take a while. Large videos can be slow or exceed your phone's available memory.</p>
+</section>
+
+<section class="panel hidden" id="checkPanel">
+<div class="eyebrow">02 / VIDEO ANALYSIS</div><h2>TIKTOK CHECKER.</h2><p class="desc">Check your video's dimensions, aspect ratio, duration and file size.</p>
+<label class="upload"><span style="font-size:28px">🔎</span><strong id="checkFileName">Choose video to check</strong><small>Your file is analysed locally in this browser</small><input id="checkFile" type="file" accept="video/*"></label>
+<button class="btn alt" id="checkBtn" disabled>✓ CHECK VIDEO</button>
+<div id="checkResults" class="hidden"><div class="result" id="metrics"></div><div class="status" id="checkSummary"></div></div>
+<p class="note">This checker reports technical compatibility only. It cannot predict TikTok reach, views, recommendations, copyright status or account standing. FPS and bitrate are not reliably available from every mobile browser.</p>
+</section>
+
+<section class="panel" id="tiktokPanel">
+<div class="eyebrow">03 / SOCIAL PUBLISHING</div><h2>CONNECT TIKTOK.</h2>
+<p class="desc">Prepare your caption and set up official TikTok account authorization.</p>
+<div class="status" style="display:block;margin-top:0"><strong>ACCOUNT STATUS: NOT CONNECTED</strong><br>Direct posting requires a TikTok Developer app, approved Content Posting API access, the video.publish permission, and a secure backend. This page does not collect your TikTok password.</div>
+<label class="label" for="caption">VIDEO CAPTION</label>
+<textarea id="caption" class="field" rows="3" placeholder="Write your caption and hashtags…"></textarea>
+<button class="btn" type="button" onclick="window.open('https://developers.tiktok.com/','_blank','noopener')">OPEN TIKTOK DEVELOPER PORTAL ↗</button>
+<p class="note">Actual account connection and direct publishing are not active until OAuth, API approval and server-side token handling are configured. Never enter your TikTok password into this page.</p>
+</section>
+
 </main>
-<footer><div class="wrap"><span>© <span id="year"></span> JAXEN DOOM. All rights reserved.</span><span>BUILT WITH PASSION.</span></div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<footer>© <span id="year"></span> JAXEN DOOM · BUILT FOR CREATORS</footer>
+<script>
+const $=id=>document.getElementById(id);
+$('year').textContent=new Date().getFullYear();
+function showTab(which){const t=which==='trans';$('transPanel').classList.toggle('hidden',!t);$('checkPanel').classList.toggle('hidden',t);$('tabTrans').classList.toggle('active',t);$('tabCheck').classList.toggle('active',!t)}
+let transFile=null,checkFile=null;
+$('transFile').addEventListener('change',e=>{transFile=e.target.files[0]||null;$('transFileName').textContent=transFile?transFile.name:'Choose video file';$('convertBtn').disabled=!transFile;$('transStatus').textContent='';$('downloadLink').classList.add('hidden')});
+$('checkFile').addEventListener('change',e=>{checkFile=e.target.files[0]||null;$('checkFileName').textContent=checkFile?checkFile.name:'Choose video to check';$('checkBtn').disabled=!checkFile;$('checkResults').classList.add('hidden')});
+const fmtBytes=n=>n<1024*1024?(n/1024).toFixed(0)+' KB':(n/1024/1024).toFixed(2)+' MB';
+$('checkBtn').addEventListener('click',()=>{
+ if(!checkFile)return;const url=URL.createObjectURL(checkFile),v=document.createElement('video');v.preload='metadata';v.muted=true;
+ $('checkBtn').disabled=true;$('checkSummary').textContent='Analysing video…';
+ v.onloadedmetadata=()=>{
+  const w=v.videoWidth,h=v.videoHeight,d=v.duration,ratio=w/h,vertical=ratio<0.8&&ratio>0.5,portrait=ratio<1;
+  const items=[['RESOLUTION',w+' × '+h],['ASPECT RATIO',ratio.toFixed(2)+':1'],['DURATION',isFinite(d)?Math.floor(d/60)+':'+String(Math.floor(d%60)).padStart(2,'0'):'Unknown'],['FILE SIZE',fmtBytes(checkFile.size)]];
+  $('metrics').innerHTML=items.map(x=>'<div class="metric"><small>'+x[0]+'</small><strong>'+x[1]+'</strong></div>').join('');
+  const checks=[];
+  checks.push((portrait?'✓ Portrait video':'⚠ Landscape/square video')+' — TikTok commonly displays vertical 9:16 video best.');
+  checks.push((h>=720?'✓ Resolution is at least 720 pixels high':'⚠ Resolution is below 720 pixels high')+'.');
+  checks.push((d<=600?'✓ Duration is within 10 minutes':'⚠ Video is longer than 10 minutes')+'. Check current TikTok upload limits for your account.');
+  checks.push('• File type: '+(checkFile.type||'not reported by browser')+'.');
+  $('checkSummary').textContent=checks.join('\\n')+'\\n\\nThis is a basic technical check, not a guarantee of upload quality or reach.';
+  $('checkResults').classList.remove('hidden');$('checkBtn').disabled=false;URL.revokeObjectURL(url);
+ };
+ v.onerror=()=>{$('checkSummary').textContent='Could not read this video in your browser. Try an MP4 file.';$('checkResults').classList.remove('hidden');$('checkBtn').disabled=false;URL.revokeObjectURL(url)};
+ v.src=url;
+});
+let ffmpeg=null,enginePromise=null;
+async function getEngine(){
+ if(ffmpeg)return ffmpeg;if(enginePromise)return enginePromise;
+ enginePromise=(async()=>{
+  $('transStatus').textContent='Loading video engine… Keep this page open and stay connected to the internet.';
+  const {FFmpeg}=await import('https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.10/dist/esm/index.js');
+  const {toBlobURL}=await import('https://cdn.jsdelivr.net/npm/@ffmpeg/util@0.12.1/dist/esm/index.js');
+  const core='https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.6/dist/umd';
+  const f=new FFmpeg();f.on('progress',({progress})=>{$('transStatus').textContent='Converting… '+Math.round(progress*100)+'%';});
+  await f.load({coreURL:await toBlobURL(core+'/ffmpeg-core.js','text/javascript'),wasmURL:await toBlobURL(core+'/ffmpeg-core.wasm','application/wasm')});
+  ffmpeg=f;return f;
+ })();try{return await enginePromise}catch(err){enginePromise=null;throw err}
+}
+$('convertBtn').addEventListener('click',async()=>{
+ if(!transFile)return;const btn=$('convertBtn');btn.disabled=true;$('downloadLink').classList.add('hidden');
+ try{
+  const f=await getEngine();$('transStatus').textContent='Preparing video…';
+  const {fetchFile}=await import('https://cdn.jsdelivr.net/npm/@ffmpeg/util@0.12.1/dist/esm/index.js');
+  const ext=(transFile.name.split('.').pop()||'mp4').replace(/[^a-z0-9]/gi,'').toLowerCase();
+  const input='input.'+ext,output='jaxen-doom.mp4';await f.writeFile(input,await fetchFile(transFile));
+  const res=$('resolution').value,fps=$('fps').value,crf=$('quality').value,args=['-i',input,'-c:v','libx264','-preset','ultrafast','-crf',crf,'-pix_fmt','yuv420p','-c:a','aac','-b:a','128k','-movflags','+faststart'];
+  if(res!=='original')args.push('-vf',`scale=-2:${res}`);
+  if(fps!=='original')args.push('-r',fps);
+  args.push('-y',output);const code=await f.exec(args);if(code!==0)throw new Error('FFmpeg could not convert this file.');
+  const data=await f.readFile(output),blob=new Blob([data.buffer],{type:'video/mp4'}),url=URL.createObjectURL(blob);
+  $('downloadLink').href=url;$('downloadLink').classList.remove('hidden');$('transStatus').textContent='✓ Conversion complete. Your MP4 is ready to download.';
+  try{await f.deleteFile(input);await f.deleteFile(output)}catch(e){}
+ }catch(err){$('transStatus').textContent='Conversion failed: '+(err&&err.message?err.message:String(err))+'\\nTry a shorter/smaller MP4, close other apps, and check your internet connection.'}
+ finally{btn.disabled=false}
+});
+</script>
 </body></html>
